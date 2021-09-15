@@ -1,0 +1,55 @@
+{
+  "name": "webpack-multi-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
+    "build": " webpack --config build/webpack.prod.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "node build/create.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyafei/webpack-multi-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huyafei/webpack-multi-page/issues"
+  },
+  "homepage": "https://github.com/huyafei/webpack-multi-page#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.4",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "glob": "^7.1.7",
+    "html-webpack-plugin": "^5.3.2",
+    "html-withimg-loader": "^0.1.16",
+    "mini-css-extract-plugin": "^2.3.0",
+    "postcss-loader": "^6.1.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "purgecss-webpack-plugin": "^4.0.3",
+    "style-loader": "^3.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}

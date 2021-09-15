@@ -1,0 +1,22 @@
+@import "../../assets/styles/common.css";
+.my-font{
+  font-family: YJT-Font;
+  font-size: 20px;
+  font-weight: bold;
+}
+.l3{
+  background: yellow;
+}
+
+.bg{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+}
+.bg1{
+  background: url('/static/images/01.jpeg');
+}
+.bg2{
+  background: url('../../assets/images/tx.jpg');
+}
+

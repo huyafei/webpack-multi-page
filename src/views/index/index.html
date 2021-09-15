@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+<!--  <link rel="stylesheet" href="../../assets/styles/index.css">-->
+
+  <style>
+    ul{
+      background: #ddd;
+    }
+    .bg3{
+      background: url('/static/images/01.jpeg');
+    }
+    .bg4{
+      background: url('../../assets/images/tx.jpg');
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li>我是列表1</li>
+  <li style="background: blue">我是列表2</li>
+  <li class="l3">我是列表3</li>
+  <li>我是列表4</li>
+  <li class="g">我是列表5</li>
+  <li class="my-font">0123456789</li>
+</ul>
+<div class="flex-r">
+  <div class="bg" style='background: url("/static/images/01.jpeg")'></div>
+  <div class="bg bg1"></div>
+  <div class="bg bg3"></div>
+  <img src="/static/images/01.jpeg" alt="" width="100px" height="100px">
+
+</div>
+<div class="flex-r">
+  <div class="bg" style='background-image: url("../../assets/images/tx.jpg")'></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg4"></div>
+  <img src="../../assets/images/tx.jpg" alt="" width="100px" height="100px">
+</div>
+<div>
+  <button  onclick="submit1()">按钮1</button>
+  <button id="btn1" >按钮1</button>
+  <button onclick="submit2()">按钮2</button>
+</div>
+<script>
+  const submit2=function () {
+    console.log("按钮2")
+  }
+</script>
+</body>
+</html>

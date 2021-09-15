@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: YJT-Font;
+  src: url('../fonts/LcdD-YJT.ttf');
+}
+.flex-r{
+  display: flex;
+  flex-direction: row;
+}
