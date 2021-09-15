@@ -1,4 +1,4 @@
-## webpack-multi=page
+## webpack-multi-page
 ```text
 基于webpack5多页面自动化构建html、css、js
 ```
