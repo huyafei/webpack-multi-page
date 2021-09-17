@@ -21,7 +21,7 @@ yarn run create *
 ```
 ## 说明
 ```text
-使用yarn run create * 创建页面，会在views下新建当前创建的目录名，在该目录名下自动生成index.html、index.js、index.css这三个文件
+使用yarn run create * 创建页面，会在views下新建当前创建的目录名，在该目录名下自动生成index.html、vensst.js、index.css这三个文件
 ```
 ## 注意
 * 页面层级不可嵌套
