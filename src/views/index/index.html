@@ -2,51 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
-<!--  <link rel="stylesheet" href="../../assets/styles/index.css">-->
-
+  <title>标题</title>
+  <link rel="stylesheet" href="../../assets/styles/index.css">
+  <script type="text/javascript" src="../../utils/test.js"></script>
   <style>
-    ul{
+    ul {
       background: #ddd;
     }
-    .bg3{
-      background: url('/static/images/01.jpeg');
+
+    .list > div {
+      margin-right: 20px;
+      border-right: 2px solid #ddd;
+      padding-right: 20px;
     }
-    .bg4{
-      background: url('../../assets/images/tx.jpg');
+
+    .bg3 {
+      background: url('/static/images/01.jpeg');
+      background-size: 100% 100%;
+    }
+
+    .bg4 {
+      background: url('../assets/images/tx.jpg');
+      background-size: 100% 100%;
     }
   </style>
 </head>
 <body>
-<ul>
-  <li>我是列表1</li>
-  <li style="background: blue">我是列表2</li>
-  <li class="l3">我是列表3</li>
-  <li>我是列表4</li>
-  <li class="g">我是列表5</li>
-  <li class="my-font">0123456789</li>
+<ul class="ul--style">
+  <li>没有样式</li>
+  <li style="background: blue">行内style添加的背景样色</li>
+  <li class="l3">入口文件引入css添加背景颜色</li>
+  <li>没有样式</li>
+  <li class="g">link引入css全局的背景颜色</li>
+  <li class="my-font bg-green">0123456789 入口文件引入的css 里面引入的添加的字体样式和背景颜色</li>
 </ul>
-<div class="flex-r">
-  <div class="bg" style='background: url("/static/images/01.jpeg")'></div>
-  <div class="bg bg1"></div>
-  <div class="bg bg3"></div>
-  <img src="/static/images/01.jpeg" alt="" width="100px" height="100px">
-
+<div class="list flex-r">
+  <div>
+    <span>行内样式背景图片 绝对路径</span>
+    <div class="bg" style='background: url("/static/images/01.jpeg")'></div>
+  </div>
+  <div>
+    <span>入口文件引入css背景图片 绝对路径</span>
+    <div class="bg bg1"></div>
+  </div>
+  <div>
+    <span>内联样式背景图片 绝对路径</span>
+    <div class="bg bg3"></div>
+  </div>
+  <div>
+    <span>img src 绝对路径引入</span>
+    <img src="/static/images/01.jpeg" alt="" width="100px" height="100px">
+  </div>
 </div>
-<div class="flex-r">
-  <div class="bg" style='background-image: url("../../assets/images/tx.jpg")'></div>
-  <div class="bg bg2"></div>
-  <div class="bg bg4"></div>
-  <img src="../../assets/images/tx.jpg" alt="" width="100px" height="100px">
+<div class="list flex-r">
+  <div>
+    <span>行内（内联）样式背景图片 相对路径</span>
+    <div class="bg" style='background-image: url("../../assets/images/tx.jpg");'></div>
+  </div>
+  <div>
+    <span>入口文件引入css背景图片 相对路径</span>
+    <div class="bg bg2"></div>
+  </div>
+
+  <div>
+    <span>内部样式背景图片 相对路径</span>
+    <div class="bg bg4"></div>
+  </div>
+
+  <div>
+    <span>img src 相对路径引入</span>
+    <img src="../../assets/images/tx.jpg" alt="" width="100px" height="100px">
+  </div>
 </div>
 <div>
-  <button  onclick="submit1()">按钮1</button>
-  <button id="btn1" >按钮1</button>
-  <button onclick="submit2()">按钮2</button>
+  <button onclick="submit1()">调用入口文件写的函数</button>
+  <br>
+  <button id="btn2">调用入口文件中使用元素绑定函数</button>
+  <br>
+  <button onclick="submit3()">调用script中写的函数</button>
+  <br>
+  <button onclick="submit4()">调用script中引入的js函数</button>
 </div>
 <script>
-  const submit2=function () {
-    console.log("按钮2")
+  const submit3 = function () {
+    console.log("按钮3")
   }
 </script>
 </body>

@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 const program = require('commander');
-console.log(process.argv)
+
 //获取名称
 let name=program.parse(process.argv).args[0]
 const baseDir = path.join(__dirname, "../src/views/");

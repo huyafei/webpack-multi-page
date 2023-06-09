@@ -1,22 +1,32 @@
-@import "../../assets/styles/common.css";
-.my-font{
+@import url("../../assets/styles/common.css");
+
+.my-font {
   font-family: YJT-Font;
   font-size: 20px;
   font-weight: bold;
+
 }
-.l3{
+
+.l3 {
   background: yellow;
 }
 
-.bg{
+.bg {
   width: 100px;
   height: 100px;
   border: 1px solid #ddd;
 }
-.bg1{
+
+.bg1 {
   background: url('/static/images/01.jpeg');
-}
-.bg2{
-  background: url('../../assets/images/tx.jpg');
+  background-size: 100% 100%;
 }
 
+.bg2 {
+  background: url('../../assets/images/tx.jpg');
+  background-size: 100% 100%;
+}
+
+.ul--style {
+  transform: rotate(0);
+}
